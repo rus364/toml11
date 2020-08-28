@@ -23,6 +23,12 @@
           "-Dtoml11_BUILD_TEST:BOOL=OFF"
         ];
 
+        buildPhase = "cmake .";
+
+        installPhase = ''
+          make install;
+        '';
+
       };
 
   };
